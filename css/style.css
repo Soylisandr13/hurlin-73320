@@ -20,7 +20,11 @@ nav {
         justify-content: center;
         background-color: rgb(48, 48, 82);
 }
-header nav ul li a {color: rgb(255, 255, 255)!important;}
+
+header nav ul li a {
+        color: rgb(255, 255, 255) !important;
+}
+
 .navbar-brand {
         color: rgb(255, 255, 255);
         font-size: 40px;
@@ -30,14 +34,14 @@ header nav ul li a {color: rgb(255, 255, 255)!important;}
 
 main {
         color: rgb(255, 255, 255);
-        background-color:  rgb(48, 48, 82);
+        background-color: rgb(48, 48, 82);
         text-align: center;
         padding: 20px;
         background-image: url(../img/pokefondo.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment:scroll;
+        background-attachment: scroll;
 }
 
 .hero {
@@ -76,12 +80,13 @@ main {
         color: rgb(255, 255, 255)
 }
 
-.grid { display: grid;
-        grid-template-columns:1fr 1fr 1fr;
+.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 33% 33% 33%;
         row-gap: 20px;
         column-gap: 20px;
-        }
+}
 
 .grid img {
         width: 100%;
@@ -111,8 +116,8 @@ main {
 }
 
 .eventos1 div div a {
-        background-color:rgb(48, 48, 82);
-        text-decoration:wavy;
+        background-color: rgb(48, 48, 82);
+        text-decoration: wavy;
         color: rgb(255, 255, 255)
 }
 
@@ -136,6 +141,7 @@ main {
         margin: 20px auto;
         border: 10px solid rgb(48, 48, 82);
 }
+
 /*footer*/
 footer {
         background-color: rgb(48, 48, 82);
@@ -152,22 +158,72 @@ footer a {
         text-decoration: none;
 }
 
+main {
+        .pokedexinfo {
+                padding: 20px;
+                margin: 30px;
+                border-radius: 10px;
+        }
+
+        main h1 {
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+                text-align: center;
+        }
+
+        main h2 {
+                color: rgb(255, 255, 255);
+                font-size: 40px;
+                text-align: center;
+        }
+
+        main p {
+                color: rgb(245, 203, 239);
+                font-size: 30px;
+                text-align: center;
+        }
+}
+
+.generaciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        grid-gap: 30px;
+        padding: 20px;
+        margin: 30px;
+}
+
+.generaciones div img {
+
+        width: 60%;
+        height: 60%;
+        border-radius: 40px;
+        box-shadow: 0 4px 8px rgb(48, 48, 82);
+
+
+}
+
 @media screen and (max-width: 999px) {
         .grid {
                 display: grid;
-        grid-template-columns:25% 25% 25% 25%;
-        grid-template-rows: 50% 50%;
-        row-gap: 5px;
-        column-gap: 5px;}
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 50% 50%;
+                row-gap: 5px;
+                column-gap: 5px;
+        }
+
         .grid img {
                 width: 50px;
                 height: 50px;
                 object-fit: cover;
         }
-        .eventos img, .eventos1 div div img {
+
+        .eventos img,
+        .eventos1 div div img {
                 width: 100%;
                 height: auto;
         }
+
         .eventos1-container {
                 display: flex;
                 flex-direction: column;
@@ -178,8 +234,14 @@ footer a {
                 padding: 50px;
                 font-size: 20px;
         }
+
         nav {
                 font-size: 20px;
         }
-        
-        }
+
+        .generaciones {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 100% 100%;
+                grid-gap: 20%;
+                margin: 30%;}}
