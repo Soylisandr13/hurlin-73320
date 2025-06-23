@@ -2,15 +2,15 @@ main {
     flex: 1 0 auto !important;
     padding-bottom: 80px;
     padding-top: 70px;
-    background-color: rgb(128, 128, 194); // mismo color de fondo
-    min-height: 100vh; // asegura altura mínima de pantalla
-    overflow: hidden; // evita desbordes por seguridad
+    background-color: rgb(128, 128, 194); 
+    min-height: 100vh; 
+    overflow: hidden; 
 
     .grid-container {
         min-width: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto; // misma altura que las secciones
+        grid-template-rows: auto auto; 
         grid-template-areas:
             "seccion1 seccion2"
             "seccion3 seccion3";
@@ -191,7 +191,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: rgb(48, 48, 82);
-    padding: 6px 0; // más bajo
+    padding: 6px 0; 
     text-align: center;
     z-index: 1000;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.15);

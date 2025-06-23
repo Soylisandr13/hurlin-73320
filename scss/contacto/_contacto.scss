@@ -1,6 +1,5 @@
 .carousel-inner {
     height: 700px !important;
-    /* altura fija */
     overflow: hidden !important;
     width: 90%;
     justify-content: center;
@@ -46,7 +45,7 @@ main {
                 height: 100% !important;
                 width: auto !important;
                 object-fit: contain !important;
-                background-color: black !important; // o "contain" si no querés que se recorte
+                background-color: black !important; 
                 display: block !important;
                 margin: 0 auto !important;
             }

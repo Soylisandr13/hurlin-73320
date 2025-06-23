@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
         main .grid-container {
                 grid-template-columns: 1fr;
-                /* una sola columna */
+              
                 grid-template-rows: auto;
                 grid-template-areas:
                         "seccion1"

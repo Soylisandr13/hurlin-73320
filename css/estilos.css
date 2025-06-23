@@ -272,7 +272,6 @@ footer a:hover {
 
 .carousel-inner {
   height: 700px !important;
-  /* altura fija */
   overflow: hidden !important;
   width: 90%;
   justify-content: center;
@@ -320,7 +319,6 @@ main div .carousel-item img {
 @media screen and (max-width: 768px) {
   main .grid-container {
     grid-template-columns: 1fr;
-    /* una sola columna */
     grid-template-rows: auto;
     grid-template-areas: "seccion1" "seccion2" "seccion3";
   }
