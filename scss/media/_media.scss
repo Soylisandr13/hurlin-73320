@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+        main .grid-container {
+                grid-template-columns: 1fr;
+                /* una sola columna */
+                grid-template-rows: auto;
+                grid-template-areas:
+                        "seccion1"
+                        "seccion2"
+                        "seccion3";
+
+                main .seccion1,
+                main .seccion2,
+                main .seccion3 {
+                        height: auto;
+                        width: 100%;
+
+                        .eventos1-container {
+                                flex-direction: column;
+                                align-items: center;
+                        }
+                }
+        }
+}
