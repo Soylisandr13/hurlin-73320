@@ -1,34 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  padding: 0px;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
 }
 
 header nav {
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  background-color: rgb(48, 48, 82);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 1050 !important;
+  background-color: rgb(48, 48, 82) !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 20px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+header nav div ul {
+  display: flex !important;
+  list-style: none !important;
+  gap: 15px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 header nav div ul li a {
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  padding: 6px 10px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s !important;
+}
+header nav div ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 .navbar-brand {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-weight: bold;
-  text-decoration: none;
+  color: white !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
 }
 
 main {
@@ -61,28 +78,36 @@ main .hero p {
   text-shadow: 1px 1px 3px rgb(128, 128, 194);
 }
 
+main {
+  flex: 1 0 auto !important;
+  padding-bottom: 80px;
+  padding-top: 70px;
+  background-color: rgb(128, 128, 194);
+  min-height: 100vh;
+  overflow: hidden;
+}
 main .grid-container {
-  width: 80%;
-  height: 2500px;
-  margin: 20px auto;
+  min-width: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 400px 400px;
-  grid-gap: 20px;
-  grid-template-areas: "seccion1 seccion2" "seccion1 seccion2" "seccion3 seccion3";
-  justify-content: center;
+  grid-template-rows: auto auto;
+  grid-template-areas: "seccion1 seccion2" "seccion3 seccion3";
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
 }
-main .seccion1 {
+main .grid-container .seccion1 {
   grid-area: seccion1;
   width: 100%;
-  height: 700px;
+  min-height: 900px;
+  height: auto;
   border: 2px solid rgb(48, 48, 82);
   padding: 5px;
   background-color: rgb(128, 128, 194);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .seccion1 img {
+main .grid-container .seccion1 img {
   width: 90%;
   height: auto;
   display: block;
@@ -90,19 +115,19 @@ main .seccion1 img {
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .seccion1 h2 {
+main .grid-container .seccion1 h2 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-top: 10px;
 }
-main .seccion1 p {
+main .grid-container .seccion1 p {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 16px;
   margin-top: 10px;
 }
-main .seccion1 a {
+main .grid-container .seccion1 a {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -116,20 +141,21 @@ main .seccion1 a {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-main .seccion1 a:hover {
+main .grid-container .seccion1 a:hover {
   background-color: rgb(70, 70, 110);
 }
-main .seccion2 {
+main .grid-container .seccion2 {
   grid-area: seccion2;
   width: 100%;
-  height: 700px;
+  min-height: 900px;
+  height: auto;
   border: 2px solid rgb(48, 48, 82);
   padding: 5px;
   background-color: rgb(128, 128, 194);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .seccion2 img {
+main .grid-container .seccion2 img {
   width: 90%;
   height: auto;
   display: block;
@@ -138,31 +164,28 @@ main .seccion2 img {
   margin: 0 auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .seccion3 {
+main .grid-container .seccion3 {
   grid-area: seccion3;
-  margin: 30px auto;
-  width: 100%;
-  height: 800px;
+  height: 900px;
+  padding: 20px;
   border: 2px solid rgb(48, 48, 82);
-  padding: 5px;
   background-color: rgb(128, 128, 194);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .seccion3 h2 {
+main .grid-container .seccion3 h2 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-top: 10px;
 }
-main .seccion3 .eventos1-container {
+main .grid-container .seccion3 .eventos1-container {
   display: flex;
   gap: 20px;
   padding: 20px;
   margin: 0 auto;
   justify-content: center;
 }
-main .seccion3 .eventos1-container div {
+main .grid-container .seccion3 .eventos1-container div {
   width: 40%;
   height: 700px;
   background-color: rgb(255, 255, 255);
@@ -173,27 +196,27 @@ main .seccion3 .eventos1-container div {
   flex-direction: column;
   align-items: center;
 }
-main .seccion3 .eventos1-container div img {
+main .grid-container .seccion3 .eventos1-container div img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
-main .seccion3 .eventos1-container div h3 {
+main .grid-container .seccion3 .eventos1-container div h3 {
   text-align: center;
   color: rgb(48, 48, 82);
   font-size: 24px;
   margin-top: 10px;
   font-weight: bold;
 }
-main .seccion3 .eventos1-container div p {
+main .grid-container .seccion3 .eventos1-container div p {
   text-align: center;
   color: rgb(48, 48, 82);
   font-size: 20px;
   margin-top: 10px;
   flex-grow: 1;
 }
-main .seccion3 .eventos1-container div a {
+main .grid-container .seccion3 .eventos1-container div a {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -210,34 +233,41 @@ main .seccion3 .eventos1-container div a {
   margin-top: auto;
   align-self: center;
 }
-main .seccion3 .eventos1-container div a:hover {
+main .grid-container .seccion3 .eventos1-container div a:hover {
   background-color: rgb(70, 70, 110);
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: rgb(48, 48, 82);
+  padding: 6px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.15);
 }
 footer p {
-  color: white;
-  text-align: center;
-  padding: 10px;
+  color: #e0e0e0;
+  font-size: 12px;
+  margin: 2px 0;
+  font-weight: 300;
 }
 footer a {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  align-items: center;
-  display: inline;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: rgb(48, 48, 82);
-  color: rgb(128, 128, 194);
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #ffffff;
+  color: rgb(48, 48, 82);
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 14px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 footer a:hover {
-  background-color: rgb(70, 70, 110);
+  background-color: rgb(220, 220, 250);
 }
 
 .carousel-inner {
@@ -309,28 +339,24 @@ main div .carousel-item img {
 }
 main {
   width: 100%;
-  height: 3000px;
+  min-height: 100vh;
+  padding-bottom: 60px;
 }
 main .eventos-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  max-width: 1000px;
+  margin: 60px auto 20px auto;
+  text-align: center;
+  padding: 40px;
   background-color: #3e1e5c;
   color: #ffffff;
-  padding: 60px 30px;
-  text-align: center;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  margin: 40px auto;
-  max-width: 1000px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 main .eventos-header h1 {
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 main .eventos-header p {
   font-size: 18px;
@@ -344,16 +370,15 @@ main .eventos {
   grid-template-columns: 1fr;
   gap: 30px;
   padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 400px;
+  max-width: 1000px;
+  margin: 30px auto;
 }
 main .eventos div {
-  color: rgb(48, 48, 82);
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: rgb(48, 48, 82);
 }
 main .eventos div img {
   width: 100%;
@@ -363,12 +388,12 @@ main .eventos div img {
   margin-bottom: 15px;
 }
 main .eventos div h3 {
-  font-size: 30px;
-  color: rgb(48, 48, 82);
+  font-size: 24px;
   margin-bottom: 10px;
+  color: rgb(48, 48, 82);
 }
 main .eventos div p {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(48, 48, 82);
 }
 
