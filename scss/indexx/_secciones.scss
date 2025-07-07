@@ -208,39 +208,3 @@ main {
 }
 
 
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(48, 48, 82);
-    padding: 6px 0;
-    text-align: center;
-    z-index: 1000;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.15);
-
-    p {
-        color: #e0e0e0;
-        font-size: 12px;
-        margin: 2px 0;
-        font-weight: 300;
-    }
-
-    a {
-        font-size: 12px;
-        font-weight: 500;
-        display: inline-block;
-        padding: 4px 10px;
-        background-color: #ffffff;
-        color: rgb(48, 48, 82);
-        text-decoration: none;
-        border-radius: 14px;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-
-        &:hover {
-            background-color: rgb(220, 220, 250);
-        }
-    }
-}

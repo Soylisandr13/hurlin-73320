@@ -21,7 +21,97 @@
                 }
         }
 }
+@media (max-width: 850px) {
+  main {
+    .grid-container {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas:
+        "seccion1"
+        "seccion2"
+        "seccion3";
+      width: 95% !important;
 
+      .seccion1,
+      .seccion2,
+      .seccion3 {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 15px !important;
+      }
+
+      .seccion1,
+      .seccion2 {
+        img {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        h2 {
+          font-size: 24px !important;
+        }
+
+        p {
+          font-size: 14px !important;
+        }
+
+        a {
+          font-size: 16px !important;
+          padding: 8px 16px !important;
+        }
+      }
+
+      .seccion2 {
+        .tarjeta-venta {
+          width: 100% !important;
+          padding: 15px !important;
+
+          img {
+            height: auto !important;
+          }
+
+          a.Link {
+            font-size: 16px !important;
+            padding: 8px 20px !important;
+          }
+        }
+      }
+
+      .seccion3 {
+        height: auto !important;
+
+        h2 {
+          font-size: 24px !important;
+        }
+
+        .eventos1-container {
+          flex-direction: column !important;
+          align-items: center !important;
+          padding: 10px !important;
+
+          div {
+            width: 90% !important;
+            height: auto !important;
+            padding: 15px !important;
+
+            h3 {
+              font-size: 20px !important;
+            }
+
+            p {
+              font-size: 16px !important;
+            }
+
+            a {
+              font-size: 16px !important;
+              padding: 8px 16px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1350px) {
   main {
     .generaciones {
@@ -47,6 +137,43 @@
       }
       p {
         font-size: 16px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner {
+    height: 300px !important;
+    width: 100% !important;
+    border-width: 5px !important;
+    margin: 10px auto !important;
+  }
+
+  main {
+    h2 {
+      font-size: 26px !important;
+      margin-bottom: 20px !important;
+      letter-spacing: 1px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+      padding: 0 10px !important;
+    }
+
+    form {
+      padding: 15px !important;
+      max-width: 100% !important;
+      border-radius: 8px !important;
+    }
+
+    div {
+      .carousel-item {
+        img {
+          width: 100% !important;
+          height: auto !important;
+        }
       }
     }
   }
