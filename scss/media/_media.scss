@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
         main .grid-container {
                 grid-template-columns: 1fr;
-              
+
                 grid-template-rows: auto;
                 grid-template-areas:
                         "seccion1"
@@ -20,4 +20,34 @@
                         }
                 }
         }
+}
+
+@media (max-width: 1350px) {
+  main {
+    .generaciones {
+      width: 95% !important;
+      grid-template-columns: 1fr !important;
+      grid-template-areas:
+        "gene1"
+        "gene2"
+        "gene3" !important;
+      gap: 15px !important;
+
+      .gene1, .gene2, .gene3 {
+        padding: 15px !important;
+      }
+    }
+
+    .pokedexinfo {
+      h1 {
+        font-size: 32px !important;
+      }
+      h2 {
+        font-size: 24px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
 }
