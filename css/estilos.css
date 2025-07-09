@@ -11,12 +11,7 @@ body {
 header nav {
   width: 100%;
   background-color: rgb(48, 48, 82) !important;
-  height: 60px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0 20px !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+  font-size: 20px !important;
 }
 header nav div ul {
   display: flex !important;
@@ -67,16 +62,16 @@ main .hero {
   background-repeat: no-repeat;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .hero h1 {
+main .hero .hur {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 20px;
   text-shadow: 2px 2px 6px rgb(128, 128, 194);
 }
-main .hero h1 .letra-g {
+main .hero .hur .letra-g {
   color: #66ccff !important;
 }
-main .hero h1 .letra-o {
+main .hero .hur .letra-o {
   color: #ff3333 !important;
 }
 main .hero p {
@@ -258,50 +253,6 @@ main .grid-container .seccion3 .eventos1-container div a {
 }
 main .grid-container .seccion3 .eventos1-container div a:hover {
   background-color: rgb(70, 70, 110);
-}
-
-.carousel-inner {
-  height: 700px !important;
-  overflow: hidden !important;
-  width: 90%;
-  justify-content: center;
-  margin: 20px auto;
-  border: 10px solid rgb(48, 48, 82);
-}
-
-main h2 {
-  color: white;
-  text-align: center;
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
-}
-main p {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 10px auto;
-  max-width: 700px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-main form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(48, 48, 82, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-main div .carousel-item img {
-  height: 100% !important;
-  width: auto !important;
-  object-fit: contain !important;
-  background-color: black !important;
-  display: block !important;
-  margin: 0 auto !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -590,6 +541,50 @@ footer a {
 }
 footer a:hover {
   background-color: rgb(200, 200, 255);
+}
+
+.carousel-inner {
+  height: 700px !important;
+  overflow: hidden !important;
+  width: 90%;
+  justify-content: center;
+  margin: 20px auto;
+  border: 10px solid rgb(48, 48, 82);
+}
+
+main {
+  color: white;
+  text-align: center !important;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+main p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px auto;
+  max-width: 700px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+main form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(48, 48, 82, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+main div .carousel-item img {
+  height: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  background-color: black !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 /*# sourceMappingURL=estilos.css.map */
