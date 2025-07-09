@@ -560,6 +560,14 @@ main .generaciones .gene1 p {
   font-size: 16px;
   color: #333;
 }
+main .generaciones .gene1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 main .generaciones .gene2 {
   grid-area: gene2;
   background-color: #f0f0f0;
@@ -578,6 +586,14 @@ main .generaciones .gene2 p {
   font-size: 16px;
   color: #333;
 }
+main .generaciones .gene2 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 main .generaciones .gene3 {
   grid-area: gene3;
   background-color: #f0f0f0;
@@ -595,6 +611,14 @@ main .generaciones .gene3 h2 {
 main .generaciones .gene3 p {
   font-size: 16px;
   color: #333;
+}
+main .generaciones .gene3 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 h1 {
