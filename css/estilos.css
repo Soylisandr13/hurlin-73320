@@ -364,6 +364,40 @@ main .grid-container .seccion3 .eventos1-container div a:hover {
     font-size: 16px !important;
   }
 }
+@media (max-width: 700px) {
+  main .pokedexinfo p {
+    font-size: 15px !important;
+    padding: 0 10px !important;
+    text-align: center !important;
+  }
+  main .generaciones {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    grid-template-areas: "gene1" "gene2" "gene3";
+    width: 100% !important;
+    gap: 15px !important;
+    margin: 10px auto !important;
+    padding: 0 10px !important;
+    box-sizing: border-box;
+  }
+  main .generaciones .gene1,
+  main .generaciones .gene2,
+  main .generaciones .gene3 {
+    padding: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  main .generaciones .gene1 h2,
+  main .generaciones .gene2 h2,
+  main .generaciones .gene3 h2 {
+    font-size: 18px !important;
+  }
+  main .generaciones .gene1 p,
+  main .generaciones .gene2 p,
+  main .generaciones .gene3 p {
+    font-size: 14px !important;
+  }
+}
 @media (max-width: 480px) {
   .carousel-inner {
     height: 300px !important;
@@ -388,6 +422,78 @@ main .grid-container .seccion3 .eventos1-container div a:hover {
   main div .carousel-item img {
     width: 100% !important;
     height: auto !important;
+  }
+}
+@media (max-width: 850px) {
+  header nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    padding: 15px 20px !important;
+  }
+  header nav .navbar-brand {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+  }
+  header nav div {
+    width: 100% !important;
+  }
+  header nav div ul {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  header nav div ul li {
+    width: 100% !important;
+  }
+  header nav div ul li a {
+    display: block !important;
+    width: 100% !important;
+    padding: 12px 10px !important;
+    font-size: 18px !important;
+    text-align: left !important;
+  }
+  header .navbar-collapse.show {
+    background-color: rgb(48, 48, 82) !important;
+    padding: 10px 0 !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    padding: 10px 15px !important;
+  }
+  header nav div {
+    width: 100% !important;
+  }
+  header nav div ul {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  header nav div ul li {
+    width: 100% !important;
+  }
+  header nav div ul li a {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    text-align: left !important;
+  }
+  header .navbar-brand {
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+  }
+  header .navbar-collapse.show {
+    background-color: rgb(48, 48, 82) !important;
+    padding: 10px 0 !important;
+    width: 100% !important;
   }
 }
 main .eventos {
@@ -579,12 +685,10 @@ main form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 main div .carousel-item img {
+  width: 100% !important;
   height: 100% !important;
-  width: auto !important;
-  object-fit: contain !important;
-  background-color: black !important;
+  object-fit: cover !important;
   display: block !important;
-  margin: 0 auto !important;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -142,6 +142,46 @@
   }
 }
 
+@media (max-width: 700px) {
+  main {
+    .pokedexinfo {
+      p {
+        font-size: 15px !important;
+        padding: 0 10px !important;
+        text-align: center !important;
+      }
+    }
+
+    .generaciones {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas:
+        "gene1"
+        "gene2"
+        "gene3";
+      width: 100% !important;
+      gap: 15px !important;
+      margin: 10px auto !important;
+      padding: 0 10px !important;
+      box-sizing: border-box;
+
+      .gene1,
+      .gene2,
+      .gene3 {
+        padding: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        h2 {
+          font-size: 18px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .carousel-inner {
     height: 300px !important;
@@ -175,6 +215,95 @@
           height: auto !important;
         }
       }
+    }
+  }
+}
+@media (max-width: 850px) {
+  header {
+    nav {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      height: auto !important;
+      padding: 15px 20px !important;
+
+      .navbar-brand {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+      }
+
+      div {
+        width: 100% !important;
+
+        ul {
+          flex-direction: column !important;
+          gap: 12px !important;
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+
+          li {
+            width: 100% !important;
+
+            a {
+              display: block !important;
+              width: 100% !important;
+              padding: 12px 10px !important;
+              font-size: 18px !important;
+              text-align: left !important;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-collapse.show {
+      background-color: rgb(48, 48, 82) !important;
+      padding: 10px 0 !important;
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    nav {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      height: auto !important;
+      padding: 10px 15px !important;
+
+      div {
+        width: 100% !important;
+
+        ul {
+          flex-direction: column !important;
+          gap: 10px !important;
+          width: 100% !important;
+
+          li {
+            width: 100% !important;
+
+            a {
+              display: block !important;
+              width: 100% !important;
+              padding: 10px !important;
+              font-size: 16px !important;
+              text-align: left !important;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      font-size: 22px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .navbar-collapse.show {
+      background-color: rgb(48, 48, 82) !important;
+      padding: 10px 0 !important;
+      width: 100% !important;
     }
   }
 }
