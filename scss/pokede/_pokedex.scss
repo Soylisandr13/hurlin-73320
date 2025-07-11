@@ -7,75 +7,78 @@ main {
 
     }
 
-    .generaciones {
-        min-width: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "gene1 gene2"
-            "gene3 gene3";
-        gap: 20px;
-        width: 80%;
-        margin: 20px auto;
+    section {
+        .generaciones {
+            min-width: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "gene1 gene2"
+                "gene3 gene3";
+            gap: 20px;
+            width: 80%;
+            margin: 20px auto;
 
-        .gene1 {
-            grid-area: gene1;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            .gene1 {
+                grid-area: gene1;
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
 
-            h2 {
-                font-size: 24px;
-                font-weight: 600;
-                margin-bottom: 10px;
-                color: #333;
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #333;
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 300px;
+                    height: auto;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                }
             }
 
-            p {
-                font-size: 16px;
-                color: #333;
-            }
-                        img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-                margin-bottom: 15px;
-                border-radius: 8px;
-                object-fit: cover;
-            }
-        }
+            .gene2 {
+                grid-area: gene2;
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
 
-        .gene2 {
-            grid-area: gene2;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
 
-            h2 {
-                font-size: 24px;
-                font-weight: 600;
-                margin-bottom: 10px;
-                color: #333;
+                p {
+                    font-size: 16px;
+                    color: #333;
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 300px;
+                    height: auto;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                }
             }
-
-            p {
-                font-size: 16px;
-                color: #333;
-            }
-
-            img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-                margin-bottom: 15px;
-                border-radius: 8px;
-                object-fit: cover;
-            }}
 
             .gene3 {
                 grid-area: gene3;
@@ -108,3 +111,4 @@ main {
             }
         }
     }
+}
