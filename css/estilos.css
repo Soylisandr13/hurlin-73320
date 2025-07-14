@@ -391,32 +391,6 @@ main .grid-container .seccion3 .eventos1-container div a:hover {
     font-size: 14px !important;
   }
 }
-@media (max-width: 480px) {
-  .carousel-inner {
-    height: 300px !important;
-    width: 100% !important;
-    border-width: 5px !important;
-    margin: 10px auto !important;
-  }
-  main h2 {
-    font-size: 26px !important;
-    margin-bottom: 20px !important;
-    letter-spacing: 1px !important;
-  }
-  main p {
-    font-size: 16px !important;
-    padding: 0 10px !important;
-  }
-  main form {
-    padding: 15px !important;
-    max-width: 100% !important;
-    border-radius: 8px !important;
-  }
-  main div .carousel-item img {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
 @media (max-width: 850px) {
   header nav {
     flex-direction: column !important;
@@ -495,6 +469,22 @@ main .grid-container .seccion3 .eventos1-container div a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px 20px;
+  }
+}
+@media (max-width: 800px) {
+  main .collage1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+    gap: 16px;
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  main .collage1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+    gap: 16px;
+    width: 95%;
   }
 }
 main .eventos {
@@ -680,15 +670,6 @@ footer p a:hover {
   background-color: rgb(200, 200, 255);
 }
 
-.carousel-inner {
-  height: 700px !important;
-  overflow: hidden !important;
-  width: 90%;
-  justify-content: center;
-  margin: 20px auto;
-  border: 10px solid rgb(48, 48, 82);
-}
-
 main {
   color: white;
   text-align: center !important;
@@ -720,11 +701,21 @@ main form {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-main div .carousel-item img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
+main .collage1 {
+  min-width: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+main .collage1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=estilos.css.map */

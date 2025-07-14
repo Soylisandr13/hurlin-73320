@@ -1,11 +1,3 @@
-.carousel-inner {
-    height: 700px !important;
-    overflow: hidden !important;
-    width: 90%;
-    justify-content: center;
-    margin: 20px auto;
-    border: 10px solid rgb(48, 48, 82);
-}
 
 main {
     color: white;
@@ -39,15 +31,22 @@ main {
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-
-    div {
-        .carousel-item {
-            img {
-                width: 100% !important;
-                height: 100% !important;
-                object-fit: cover !important;
-                display: block !important;
-            }
+    .collage1 {
+        min-width: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "foto1 foto2 foto3"
+            "foto4 foto5 foto6";
+        gap: 20px;
+        width: 80%;
+        margin: 20px auto;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
     }
 }
