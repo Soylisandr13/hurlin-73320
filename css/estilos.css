@@ -82,7 +82,6 @@ main .grid-container {
   gap: 20px;
   width: 80%;
   margin: 20px auto;
-  padding: 20px;
 }
 main .grid-container .seccion1 {
   grid-area: seccion1;
